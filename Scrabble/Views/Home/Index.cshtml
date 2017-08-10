@@ -1,0 +1,20 @@
+@{
+  Layout = "_Layout";
+}
+<div class="jumbotron">
+  <img src = "img/scrabbleImage.jpeg"/>
+  <h1> Welcome to the Scrabble Score Generator </h1>
+  <form action="/score" method = "post">
+    <div class="form-group">
+      <label for="word">Please Enter the Word</label>
+      <input id="word" name="word" type="text" />
+    </div>
+    <button type="submit" class="btn btn-primary btn-lg">Generate Score</button>
+  </form>
+  <div id = "result">
+    @if(Model != null)
+    {
+      <h3>Your Score is : @Model.Score()</h3>
+    }
+  </div>
+</div>
