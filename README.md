@@ -6,7 +6,7 @@
 
 ## Description
 
-_This Mvc application takes a amount in cents from a user and returns possible combinations of cents._
+_This Mvc application takes a word and returns a score based on characters of the word._
 
 | Behavior  | Input  | Output  |
 |---|---|---|
